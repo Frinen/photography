@@ -1,0 +1,81 @@
+/* Responsive gallery adjustments */
+/* Make the gallery adapt to different screen sizes */
+
+/* Default: 4 photos per row for medium screens */
+#main .thumb {
+    width: 25% !important;
+}
+
+/* Large screens (1680px to 1919px) - 4 photos per row */
+@media screen and (min-width: 1680px) and (max-width: 1919px) {
+    #main .thumb {
+        width: 25% !important; /* 4 photos per row */
+    }
+}
+
+/* Extra large screens (1920px to 2559px) - 5 photos per row */
+@media screen and (min-width: 1920px) and (max-width: 2559px) {
+    #main .thumb {
+        width: 20% !important; /* 5 photos per row */
+    }
+}
+
+/* Huge screens (2560px to 3439px) - 6 photos per row */
+@media screen and (min-width: 2560px) and (max-width: 3439px) {
+    #main .thumb {
+        width: 16.6666666667% !important; /* 6 photos per row */
+    }
+}
+
+/* Extra huge screens (3440px and above) - 7 photos per row */
+@media screen and (min-width: 3440px) {
+    #main .thumb {
+        width: 14.2857142857% !important; /* 7 photos per row */
+    }
+}
+
+/* Medium screens (980px to 1279px) - 3 photos per row */
+@media screen and (min-width: 980px) and (max-width: 1279px) {
+    #main .thumb {
+        width: 33.3333333333% !important; /* 3 photos per row */
+    }
+}
+
+/* Small screens (737px to 979px) - 2 photos per row */
+@media screen and (min-width: 737px) and (max-width: 979px) {
+    #main .thumb {
+        width: 50% !important; /* 2 photos per row */
+    }
+}
+
+/* Mobile screens (736px and below) - 1 photo per row */
+@media screen and (max-width: 736px) {
+    #main .thumb {
+        width: 100% !important; /* 1 photo per row */
+    }
+}
+
+/* Ensure consistent thumbnail height across all screen sizes */
+#main .thumb {
+    height: 250px !important;
+    min-height: 250px !important;
+    max-height: 250px !important;
+}
+
+/* Make sure the main container properly handles flexbox */
+#main {
+    display: flex !important;
+    flex-wrap: wrap !important;
+}
+
+/* Ensure background images maintain aspect ratios */
+#main .thumb>.image {
+    background-size: contain !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+/* Hide original image elements since we're using background images */
+#main .thumb .image img {
+    display: none !important;
+}

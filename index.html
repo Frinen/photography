@@ -16,19 +16,27 @@ layout: default
     </header>
 
     <!-- Main -->
-    <div id="main" data-exif='{{ site.exif }}'>
-        {% for image in site.static_files %}
-        {% if image.path contains 'fulls' %}
-        <article class="thumb">
-            <a href="{{ site.baseurl }}{{ site.image_fulls_loc }}/{{ image.name }}" class="image">
-                <img src="{{ site.baseurl }}{{ site.image_thumbs_loc }}/{{ image.name }}" alt=""
-                     data-name="{{ image.name }}"/></a>
-            <!--<h2></h2>
-            <p></p>-->
-        </article>
-        {% endif %}
-        {% endfor %}
-    </div>
+        <div id="main" data-exif='{{ site.exif }}'>
+                {% if site.data.photos %}
+                    {% for photo in site.data.photos %}
+                        <article class="thumb">
+                            <a href="{{ site.baseurl }}{{ photo.full_path }}" class="image">
+                                <img src="{{ site.baseurl }}{{ photo.thumb_path }}" alt="" data-name="{{ photo.name }}" />
+                            </a>
+                        </article>
+                    {% endfor %}
+                {% else %}
+                    {% for image in site.static_files %}
+                        {% if image.path contains 'fulls' %}
+                            <article class="thumb">
+                                <a href="{{ site.baseurl }}{{ site.image_fulls_loc }}/{{ image.name }}" class="image">
+                                    <img src="{{ site.baseurl }}{{ site.image_thumbs_loc }}/{{ image.name }}" alt="" data-name="{{ image.name }}"/>
+                                </a>
+                            </article>
+                        {% endif %}
+                    {% endfor %}
+                {% endif %}
+        </div>
 
     <!-- Footer -->
     <footer id="footer" class="panel">
