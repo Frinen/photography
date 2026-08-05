@@ -5,8 +5,8 @@ Place this script in the repository root and run it locally on Windows.
 Add-Type -AssemblyName System.Drawing
 
 $fulls = Join-Path -Path $PSScriptRoot -ChildPath "images/fulls"
-$thumbsRel = "/images/thumbs/"
-$fullsRel = "/images/fulls/"
+$thumbsRel = "/photography/images/thumbs/"
+$fullsRel = "/photography/images/fulls/"
 
 $items = Get-ChildItem -Path $fulls -Filter *.jpg -File -Recurse | ForEach-Object {
     $name = $_.Name
