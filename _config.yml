@@ -6,16 +6,16 @@ image_thumbs_loc: "/images/thumbs"
 google_analytics: "UA-46465113-2"
 
 # UI configs
-title: "Photography by Vova Sh"
+title: "Photography by Frinen"
 subtitle: ""
-author: "Vova Sh"
+author: "Frinen"
 header:
  title: "Photography"
- subtitle: "by Vova Sh"
+ subtitle: "by Frinen"
 web_design: "AJ"
 
 social_urls:
-  instagram: "https://www.instagram.com/_vova.sh/"
+  instagram: "https://www.instagram.com/frinenn/"
 
 # Configure which exif data to display
 # Tag is the actual exif tag, icon is a fontawesome icon. Use JSON notation without line breaks
