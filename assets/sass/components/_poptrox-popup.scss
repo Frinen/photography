@@ -15,21 +15,8 @@
 		box-shadow: 0 1em 3em 0.5em rgba(0,0,0,0.25);
 		cursor: default;
 
-		&:before {
-			@include vendor('transition', 'opacity #{_duration(transition)} ease-in-out');
-			@include vendor('background-image', (
-				'linear-gradient(to left, rgba(31,34,36,0.35), rgba(31,34,36,0) 10em, rgba(31,34,36,0))',
-				'linear-gradient(to right, rgba(31,34,36,0.35), rgba(31,34,36,0) 10em, rgba(31,34,36,0))'
-			));
-			content: '';
-			display: block;
-			height: 100%;
-			left: 0;
-			position: absolute;
-			top: 0;
-			width: 100%;
-			z-index: 1;
-			opacity: 1;
+		.pic {
+			position: relative;
 		}
 
 		.closer {
@@ -47,44 +34,44 @@
 			z-index: 2;
 		}
 
+		// Info bar: holds the nav buttons and caption underneath the image.
+		.info-bar {
+			@include padding(1em, 1.5em);
+			align-items: center;
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+		}
+
 		.nav-previous,
 		.nav-next {
 			@include vendor('transition', 'opacity #{_duration(transition)} ease-in-out');
+			background-color: rgba(0,0,0,0.05);
 			background-image: url('images/arrow.svg');
 			background-position: center;
 			background-repeat: no-repeat;
-			background-size: 5em;
-			background-color: rgba(0, 0, 0, 0);
+			background-size: 1.25em;
 			border-radius: 100%;
 			cursor: pointer;
-			height: 6em;
-			margin-top: -4em;
-			opacity: 0.1;
-			position: absolute;
-			top: 50%;
-			width: 6em;
-			z-index: 2;
+			flex-shrink: 0;
+			height: 3em;
+			opacity: 0.5;
+			width: 3em;
+
+			&:hover {
+				opacity: 1.0;
+			}
 		}
 
 		.nav-previous {
 			@include vendor('transform', 'scaleX(-1)');
-			left: 1em;
-		}
-
-		.nav-next {
-			right: 1em;
 		}
 
 		.caption {
-			@include padding(2em, 2em);
-			@include vendor('background-image', 'linear-gradient(to top, rgba(16,16,16,0.45) 25%, rgba(16,16,16,0) 100%)');
-			bottom: 0;
 			cursor: default;
-			left: 0;
-			position: absolute;
-			text-align: left;
-			width: 100%;
-			z-index: 2;
+			flex-grow: 1;
+			padding: 0 1em;
+			text-align: center;
 
 			h2, h3, h4, h5, h6 {
 				margin: 0 0 (_size(element-margin) * 0.25) 0;
@@ -92,6 +79,7 @@
 
 			p {
 				color: _palette(fg-bold);
+				margin: 0;
 			}
 		}
 
@@ -115,9 +103,7 @@
 		}
 
 		&:hover {
-			.closer,
-			.nav-previous,
-			.nav-next {
+			.closer {
 				opacity: 0.5;
 
 				&:hover {
@@ -126,17 +112,14 @@
 			}
 		}
 
-		&.loading {
-			&:before {
-				opacity: 0;
-			}
-		}
-
 		body.touch & {
-			.closer,
+			.closer {
+				opacity: 1.0 !important;
+			}
+
 			.nav-previous,
 			.nav-next {
-				opacity: 1.0 !important;
+				opacity: 0.8;
 			}
 		}
 
@@ -144,34 +127,23 @@
 			.closer {
 				background-size: 3em;
 			}
-
-			.nav-previous,
-			.nav-next {
-				background-size: 4em;
-			}
 		}
 
 		@include breakpoint('<=small') {
-			&:before {
-				display: none;
+			.info-bar {
+				@include padding(0.75em, 0.5em);
 			}
 
 			.caption {
-				display: none !important;
-			}
-
-			.closer,
-			.nav-previous,
-			.nav-next {
-				opacity: 0.8 !important;
-				display: block !important;
+				font-size: 0.8em;
+				padding: 0 0.5em;
 			}
 
 			.nav-previous,
 			.nav-next {
-				background-size: 3.5em;
-				height: 6em;
-				width: 5em;
+				background-size: 1em;
+				height: 2.5em;
+				width: 2.5em;
 			}
 		}
 	}

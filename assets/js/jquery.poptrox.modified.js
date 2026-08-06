@@ -94,7 +94,11 @@
 					windowHeight = $window.height() + settings.windowHeightPad;
 
 					var dw = Math.abs($popup.width() - $popup.outerWidth()), dh = Math.abs($popup.height() - $popup.outerHeight());
-					var maxw = windowWidth - (settings.windowMargin * 2) - dw, maxh = windowHeight - (settings.windowMargin * 2) - dh;
+
+					// Reserve extra vertical space for the info bar (caption + nav buttons) that sits below the image.
+					var infoBarReserve = (settings.popupCaptionSelector || settings.popupNavNextSelector || settings.popupNavPreviousSelector) ? 90 : 0;
+
+					var maxw = windowWidth - (settings.windowMargin * 2) - dw, maxh = windowHeight - (settings.windowMargin * 2) - dh - infoBarReserve;
 
 					$popup
 						.css('min-width', settings.popupWidth)
@@ -129,7 +133,16 @@
 					if (settings.popupSelector)
 						$popup = $(settings.popupSelector);
 					else
-						$popup = $('<div class="' + settings.popupClass + '">' + (settings.popupLoaderSelector ? '<div class="loader">' + settings.popupLoaderText + '</div>' : '') + '<div class="pic"></div>' + (settings.popupCaptionSelector ? '<div class="caption"></div>' : '') + (settings.popupCloserSelector ? '<span class="closer">' + settings.popupCloserText + '</span>' : '') + (settings.popupNavPreviousSelector ? '<div class="nav-previous"></div>' : '') + (settings.popupNavNextSelector ? '<div class="nav-next"></div>' : '') + '</div>');
+						$popup = $('<div class="' + settings.popupClass + '">' +
+							(settings.popupLoaderSelector ? '<div class="loader">' + settings.popupLoaderText + '</div>' : '') +
+							'<div class="pic"></div>' +
+							'<div class="info-bar">' +
+								(settings.popupNavPreviousSelector ? '<div class="nav-previous"></div>' : '') +
+								(settings.popupCaptionSelector ? '<div class="caption"></div>' : '') +
+								(settings.popupNavNextSelector ? '<div class="nav-next"></div>' : '') +
+							'</div>' +
+							(settings.popupCloserSelector ? '<span class="closer">' + settings.popupCloserText + '</span>' : '') +
+							'</div>');
 
 				// Get popup components
 					var	$pic = $popup.find('.pic'),
