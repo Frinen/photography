@@ -153,7 +153,15 @@
 						$nav_next = $popup.find(settings.popupNavNextSelector),
 						$nav_previous = $popup.find(settings.popupNavPreviousSelector),
 						$nav = $nav_next.add($nav_previous),
-						zoomLevel = 1;
+						zoomLevel = 1,
+						pinchStartDistance = null,
+						pinchStartZoom = 1;
+
+					function getTouchDistance(touchA, touchB) {
+						var dx = touchA.pageX - touchB.pageX,
+							dy = touchA.pageY - touchB.pageY;
+						return Math.sqrt(dx * dx + dy * dy);
+					}
 
 					function applyZoom(level) {
 						if (!$x || !$x.length)
@@ -162,8 +170,14 @@
 						$x.css({
 							transform: 'scale(' + zoomLevel + ')',
 							transformOrigin: 'center center',
-							transition: 'transform 120ms ease-out'
+							transition: 'transform 120ms ease-out',
+							touchAction: 'none'
 						});
+					}
+
+					function resetPinchState() {
+						pinchStartDistance = null;
+						pinchStartZoom = 1;
 					}
 
 				// Apply default styling?
@@ -310,6 +324,31 @@
 						e.preventDefault();
 						e.stopPropagation();
 						applyZoom(zoomLevel + (e.originalEvent.deltaY < 0 ? 0.5 : -0.5));
+					})
+					.on('touchstart', function(e) {
+						if (!$popup.is(':visible') || !e.originalEvent || !e.originalEvent.touches || e.originalEvent.touches.length !== 2)
+							return;
+
+						e.preventDefault();
+						e.stopPropagation();
+						pinchStartDistance = getTouchDistance(e.originalEvent.touches[0], e.originalEvent.touches[1]);
+						pinchStartZoom = zoomLevel;
+					})
+					.on('touchmove', function(e) {
+						if (!$popup.is(':visible') || !e.originalEvent || !e.originalEvent.touches || e.originalEvent.touches.length !== 2 || pinchStartDistance === null)
+							return;
+
+						e.preventDefault();
+						e.stopPropagation();
+
+						var currentDistance = getTouchDistance(e.originalEvent.touches[0], e.originalEvent.touches[1]);
+						if (currentDistance > 0)
+							applyZoom(pinchStartZoom * (currentDistance / pinchStartDistance));
+					})
+					.on('touchend touchcancel', function(e) {
+						if (e.originalEvent && e.originalEvent.touches && e.originalEvent.touches.length >= 2)
+							return;
+						resetPinchState();
 					});
 
 				$closer
@@ -409,9 +448,13 @@
 						$closer.hide();
 						$nav.hide();
 						$pic.hide();
-							zoomLevel = 1;
-							if ($x && $x.length)
-								$x.css('transform', 'none');
+						zoomLevel = 1;
+						resetPinchState();
+						if ($x && $x.length)
+							$x.css({
+								transform: 'none',
+								touchAction: 'none'
+							});
 					})
 					.on('poptrox_open', function(e, index) {
 
