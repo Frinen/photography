@@ -154,8 +154,16 @@
 						$nav_previous = $popup.find(settings.popupNavPreviousSelector),
 						$nav = $nav_next.add($nav_previous),
 						zoomLevel = 1,
+						panX = 0,
+						panY = 0,
 						pinchStartDistance = null,
-						pinchStartZoom = 1;
+						pinchStartZoom = 1,
+						dragStartX = 0,
+						dragStartY = 0,
+						dragStartPanX = 0,
+						dragStartPanY = 0,
+						isDragging = false,
+						wasDragged = false;
 
 					function getTouchDistance(touchA, touchB) {
 						var dx = touchA.pageX - touchB.pageX,
@@ -163,21 +171,106 @@
 						return Math.sqrt(dx * dx + dy * dy);
 					}
 
-					function applyZoom(level) {
+					function clampPan() {
+						if (!$x || !$x.length || zoomLevel <= 1)
+							return;
+
+						var imageWidth = $x.width() || ($x[0] && $x[0].naturalWidth) || 1,
+							imageHeight = $x.height() || ($x[0] && $x[0].naturalHeight) || 1,
+							containerWidth = $pic.width() || $popup.width() || 1,
+							containerHeight = $pic.height() || $popup.height() || 1,
+							maxX = ((imageWidth * zoomLevel) - containerWidth) / 2,
+							maxY = ((imageHeight * zoomLevel) - containerHeight) / 2;
+
+						maxX = Math.max(0, maxX);
+						maxY = Math.max(0, maxY);
+						panX = Math.max(-maxX, Math.min(maxX, panX));
+						panY = Math.max(-maxY, Math.min(maxY, panY));
+					}
+
+					function updateZoomTransform() {
 						if (!$x || !$x.length)
 							return;
-						zoomLevel = Math.min(4, Math.max(1, level));
+
+						if (zoomLevel <= 1) {
+							panX = 0;
+							panY = 0;
+						}
+
+						clampPan();
 						$x.css({
-							transform: 'scale(' + zoomLevel + ')',
+							transform: 'translate(' + panX + 'px, ' + panY + 'px) scale(' + zoomLevel + ')',
 							transformOrigin: 'center center',
-							transition: 'transform 120ms ease-out',
+							transition: isDragging ? 'none' : 'transform 120ms ease-out',
 							touchAction: 'none'
 						});
+					}
+
+					function applyZoom(level, clientX, clientY) {
+						if (!$x || !$x.length)
+							return;
+
+						if (typeof clientX !== 'undefined' && typeof clientY !== 'undefined' && $x[0]) {
+							var rect = $x[0].getBoundingClientRect();
+							if (rect.width && rect.height) {
+								var offsetX = Math.max(0, Math.min(rect.width, clientX - rect.left));
+								var offsetY = Math.max(0, Math.min(rect.height, clientY - rect.top));
+								$x.css('transformOrigin', (offsetX / rect.width * 100) + '% ' + (offsetY / rect.height * 100) + '%');
+							}
+						}
+
+						zoomLevel = Math.min(4, Math.max(1, level));
+						updateZoomTransform();
 					}
 
 					function resetPinchState() {
 						pinchStartDistance = null;
 						pinchStartZoom = 1;
+					}
+
+					function resetDragState() {
+						isDragging = false;
+						dragStartX = 0;
+						dragStartY = 0;
+						dragStartPanX = 0;
+						dragStartPanY = 0;
+						$popup.css('cursor', 'auto');
+					}
+
+					function markDragGesture() {
+						wasDragged = true;
+					}
+
+					function beginDrag(clientX, clientY) {
+						if (zoomLevel <= 1)
+							return;
+
+						isDragging = true;
+						dragStartX = clientX;
+						dragStartY = clientY;
+						dragStartPanX = panX;
+						dragStartPanY = panY;
+						$popup.css('cursor', 'grabbing');
+					}
+
+					function dragTo(clientX, clientY) {
+						if (!isDragging || zoomLevel <= 1)
+							return;
+
+						var dx = clientX - dragStartX,
+							dy = clientY - dragStartY,
+							imageWidth = $x.width() || 1,
+							imageHeight = $x.height() || 1,
+							containerWidth = $pic.width() || $popup.width() || 1,
+							containerHeight = $pic.height() || $popup.height() || 1,
+							maxX = ((imageWidth * zoomLevel) - containerWidth) / 2,
+							maxY = ((imageHeight * zoomLevel) - containerHeight) / 2;
+
+						maxX = Math.max(0, maxX);
+						maxY = Math.max(0, maxY);
+						panX = Math.max(-maxX, Math.min(maxX, dragStartPanX + dx));
+						panY = Math.max(-maxY, Math.min(maxY, dragStartPanY + dy));
+						updateZoomTransform();
 					}
 
 				// Apply default styling?
@@ -323,31 +416,74 @@
 							return;
 						e.preventDefault();
 						e.stopPropagation();
-						applyZoom(zoomLevel + (e.originalEvent.deltaY < 0 ? 0.5 : -0.5));
+						applyZoom(zoomLevel + (e.originalEvent.deltaY < 0 ? 0.5 : -0.5), e.clientX, e.clientY);
+					})
+					.on('mousedown', function(e) {
+						if (e.which !== 1 || zoomLevel <= 1)
+							return;
+						wasDragged = false;
+						e.preventDefault();
+						e.stopPropagation();
+						beginDrag(e.clientX, e.clientY);
+					})
+					.on('mousemove', function(e) {
+						if (!isDragging)
+							return;
+						e.preventDefault();
+						if (Math.abs(e.clientX - dragStartX) > 2 || Math.abs(e.clientY - dragStartY) > 2)
+							markDragGesture();
+						dragTo(e.clientX, e.clientY);
+					})
+					.on('mouseup mouseleave', function(e) {
+						e.preventDefault();
+						e.stopPropagation();
+						resetDragState();
+					})
+					.on('dragstart', function(e) {
+						e.preventDefault();
 					})
 					.on('touchstart', function(e) {
-						if (!$popup.is(':visible') || !e.originalEvent || !e.originalEvent.touches || e.originalEvent.touches.length !== 2)
+						if (!$popup.is(':visible') || !e.originalEvent || !e.originalEvent.touches)
 							return;
 
-						e.preventDefault();
-						e.stopPropagation();
-						pinchStartDistance = getTouchDistance(e.originalEvent.touches[0], e.originalEvent.touches[1]);
-						pinchStartZoom = zoomLevel;
+						if (e.originalEvent.touches.length === 2) {
+							e.preventDefault();
+							e.stopPropagation();
+							resetDragState();
+							pinchStartDistance = getTouchDistance(e.originalEvent.touches[0], e.originalEvent.touches[1]);
+							pinchStartZoom = zoomLevel;
+							return;
+						}
+
+						if (zoomLevel > 1 && e.originalEvent.touches.length === 1) {
+							e.preventDefault();
+							e.stopPropagation();
+							beginDrag(e.originalEvent.touches[0].clientX, e.originalEvent.touches[0].clientY);
+						}
 					})
 					.on('touchmove', function(e) {
-						if (!$popup.is(':visible') || !e.originalEvent || !e.originalEvent.touches || e.originalEvent.touches.length !== 2 || pinchStartDistance === null)
+						if (!$popup.is(':visible') || !e.originalEvent || !e.originalEvent.touches)
 							return;
 
-						e.preventDefault();
-						e.stopPropagation();
+						if (e.originalEvent.touches.length === 2 && pinchStartDistance !== null) {
+							e.preventDefault();
+							e.stopPropagation();
+							var currentDistance = getTouchDistance(e.originalEvent.touches[0], e.originalEvent.touches[1]);
+							if (currentDistance > 0)
+								applyZoom(pinchStartZoom * (currentDistance / pinchStartDistance));
+							return;
+						}
 
-						var currentDistance = getTouchDistance(e.originalEvent.touches[0], e.originalEvent.touches[1]);
-						if (currentDistance > 0)
-							applyZoom(pinchStartZoom * (currentDistance / pinchStartDistance));
+						if (isDragging && zoomLevel > 1 && e.originalEvent.touches.length === 1) {
+							e.preventDefault();
+							e.stopPropagation();
+							dragTo(e.originalEvent.touches[0].clientX, e.originalEvent.touches[0].clientY);
+						}
 					})
 					.on('touchend touchcancel', function(e) {
-						if (e.originalEvent && e.originalEvent.touches && e.originalEvent.touches.length >= 2)
+						if (e.originalEvent && e.originalEvent.touches && e.originalEvent.touches.length >= 1)
 							return;
+						resetDragState();
 						resetPinchState();
 					});
 
@@ -399,6 +535,10 @@
 						return false;
 					})
 					.on('click', function(e) {
+						if ($(e.target).closest('.poptrox-popup').length || wasDragged) {
+							wasDragged = false;
+							return false;
+						}
 
 						e.preventDefault();
 						e.stopPropagation();
@@ -449,6 +589,9 @@
 						$nav.hide();
 						$pic.hide();
 						zoomLevel = 1;
+						panX = 0;
+						panY = 0;
+						resetDragState();
 						resetPinchState();
 						if ($x && $x.length)
 							$x.css({
@@ -662,6 +805,11 @@
 							$popup
 								.css('cursor', 'pointer')
 								.on('click', function(e) {
+
+									if (wasDragged) {
+										wasDragged = false;
+										return false;
+									}
 
 									e.stopPropagation();
 									e.preventDefault();
