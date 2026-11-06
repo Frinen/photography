@@ -29,7 +29,7 @@ gulp.task('resize-images', function () {
         }))
         .pipe(gulp.dest('images/fulls'))
         .pipe(imageResize({
-            width: 512,
+            width: 640,
             imageMagick: true
         }))
         .pipe(gulp.dest('images/thumbs'));

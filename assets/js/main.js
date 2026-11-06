@@ -172,37 +172,59 @@
 	var $main = $("#main"),
 		exifDatas = {};
   
+	function loadThumbImage($image_img) {
+	  var src = $image_img.data("src");
+	  if (!src || $image_img.data("loaded")) return;
+
+	  $image_img.data("loaded", true);
+	  $image_img.attr("src", src);
+	  $image_img.one("load", function () {
+		var $image = $image_img.parent(".image");
+		if ($image.length) {
+		  $image.css("background-image", "url(" + src + ")");
+		}
+	  });
+	}
+
 	// Thumbs.
 	$main.children(".thumb").each(function () {
 	  var $this = $(this),
 		$image = $this.find(".image"),
 		$image_img = $image.children("img"),
 		x;
-  
+
 	  // No image? Bail.
 	  if ($image.length == 0) return;
-  
-	  // Image.
-	  // This sets the background of the "image" <span> to the image pointed to by its child
-	  // <img> (which is then hidden). Gives us way more flexibility.
-  
-	  // Set background.
-	  $image.css("background-image", "url(" + $image_img.attr("src") + ")");
-  
+
 	  // Set background position.
 	  if ((x = $image_img.data("position"))) $image.css("background-position", x);
-  
+
 	  // Hide original img.
 	  $image_img.hide();
-
-	  // EXIF data
-	  $image_img[0].addEventListener("load", function() {
-		EXIF.getData($image_img[0], function () {
-			exifDatas[$image_img.data('name')] = getExifDataMarkup(this);
-		});
-	  });
 	});
-  
+
+	var $thumbImages = $main.find(".thumb img");
+	if ("IntersectionObserver" in window) {
+	  var observer = new IntersectionObserver(function (entries) {
+		entries.forEach(function (entry) {
+		  if (!entry.isIntersecting) return;
+		  var $img = $(entry.target);
+		  loadThumbImage($img);
+		  observer.unobserve(entry.target);
+		});
+	  }, {
+		rootMargin: "200px 0px",
+	  });
+
+	  $thumbImages.each(function () {
+		observer.observe(this);
+	  });
+	} else {
+	  $thumbImages.each(function () {
+		loadThumbImage($(this));
+	  });
+	}
+
 	// Poptrox.
 	$main.poptrox({
 	  baseZIndex: 20000,
@@ -216,7 +238,7 @@
 			});
 		}
 		return data !== undefined ? '<p>' + data + '</p>' : ' ';
-	},
+	  },
 	  fadeSpeed: 300,
 	  onPopupClose: function () {
 		$body.removeClass("modal-active");

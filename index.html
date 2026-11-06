@@ -21,7 +21,12 @@ layout: default
                     {% for photo in site.data.photos %}
                         <article class="thumb">
                             <a href="{{ photo.full_path | relative_url }}" class="image">
-                                <img src="{{ photo.thumb_path | relative_url }}" alt="" data-name="{{ photo.name }}" />
+                                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E"
+                                     data-src="{{ photo.thumb_path | relative_url }}"
+                                     alt=""
+                                     data-name="{{ photo.name }}"
+                                     loading="lazy"
+                                     decoding="async" />
                             </a>
                         </article>
                     {% endfor %}
@@ -30,7 +35,12 @@ layout: default
                         {% if image.path contains 'fulls' %}
                             <article class="thumb">
                                 <a href="{{ site.image_fulls_loc | relative_url }}/{{ image.name }}" class="image">
-                                    <img src="{{ site.image_thumbs_loc | relative_url }}/{{ image.name }}" alt="" data-name="{{ image.name }}"/>
+                                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E"
+                                         data-src="{{ site.image_thumbs_loc | relative_url }}/{{ image.name }}"
+                                         alt=""
+                                         data-name="{{ image.name }}"
+                                         loading="lazy"
+                                         decoding="async"/>
                                 </a>
                             </article>
                         {% endif %}

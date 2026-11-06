@@ -23,6 +23,8 @@
 			));
 			@include vendor('pointer-events', 'auto');
 			-webkit-tap-highlight-color: rgba(255,255,255,0);
+			content-visibility: auto;
+			contain-intrinsic-size: 320px 240px;
 			opacity: 1;
 			overflow: hidden;
 			position: relative;
