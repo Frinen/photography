@@ -518,7 +518,7 @@
 
                                 // Lazy load captions
                                 if (typeof settings.caption == "function") {
-                                    lazyCaption = settings.caption(x.a);
+                                    lazyCaption = settings.caption(x.a, $x);
                                 } else {
                                     lazyCaption = x.captionText;
                                 }
@@ -547,7 +547,7 @@
 
                                         // Lazy load captions
                                         if (typeof settings.caption == "function") {
-                                            lazyCaption = settings.caption(x.a);
+                                            lazyCaption = settings.caption(x.a, $x);
                                         } else {
                                             lazyCaption = x.captionText;
                                         }

@@ -235,17 +235,25 @@
 	// Poptrox.
 	$main.poptrox({
 	  baseZIndex: 20000,
-	  caption: function ($a) {
-		var $image_img = $a.children('img');
-		if (!$image_img.length || !$image_img.data('name')) return ' ';
-		var src = ($image_img.attr('src') || '');
-		if (!src || src.indexOf('data:image/svg+xml') === 0) return ' ';
-		var data = exifDatas[$image_img.data('name')];
+	  caption: function ($a, $popupImage) {
+		var $thumbImage = $a.children('img');
+		var photoName = ($thumbImage.length ? $thumbImage.data('name') : null) || $a.data('name') || ($a.attr('href') || '').split('/').pop();
+		var $image_img = $popupImage && $popupImage.length && $popupImage[0].nodeName === 'IMG' ? $popupImage : $thumbImage;
+		if (!$image_img.length || !photoName) return ' ';
+		var data = exifDatas[photoName];
 		if (data === undefined) {
 			try {
+				if ($image_img[0] instanceof HTMLImageElement && !$image_img[0].complete) {
+					return ' ';
+				}
 				EXIF.getData($image_img[0], function () {
-					data = exifDatas[$image_img.data('name')] = getExifDataMarkup(this);
+					data = exifDatas[photoName] = getExifDataMarkup(this);
+					var $caption = $('.poptrox-popup .caption');
+					if ($caption.length) {
+						$caption.trigger('update', [data !== '' ? '<p>' + data + '</p>' : ' ']);
+					}
 				});
+				return ' ';
 			} catch (err) {
 				return ' ';
 			}
@@ -253,6 +261,7 @@
 		return data !== undefined && data !== '' ? '<p>' + data + '</p>' : ' ';
 	  },
 	  fadeSpeed: 300,
+	  preload: false,
 	  onPopupClose: function () {
 		$body.removeClass("modal-active");
 	  },
