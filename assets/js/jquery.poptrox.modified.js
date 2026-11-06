@@ -152,7 +152,19 @@
 						$closer = $popup.find(settings.popupCloserSelector),
 						$nav_next = $popup.find(settings.popupNavNextSelector),
 						$nav_previous = $popup.find(settings.popupNavPreviousSelector),
-						$nav = $nav_next.add($nav_previous);
+						$nav = $nav_next.add($nav_previous),
+						zoomLevel = 1;
+
+					function applyZoom(level) {
+						if (!$x || !$x.length)
+							return;
+						zoomLevel = Math.min(4, Math.max(1, level));
+						$x.css({
+							transform: 'scale(' + zoomLevel + ')',
+							transformOrigin: 'center center',
+							transition: 'transform 120ms ease-out'
+						});
+					}
 
 				// Apply default styling?
 					if (settings.usePopupDefaultStyling) {
@@ -291,6 +303,15 @@
 
 					});
 
+				$popup
+					.on('wheel', function(e) {
+						if (!$popup.is(':visible'))
+							return;
+						e.preventDefault();
+						e.stopPropagation();
+						applyZoom(zoomLevel + (e.originalEvent.deltaY < 0 ? 0.5 : -0.5));
+					});
+
 				$closer
 					.css('cursor', 'pointer')
 					.on('click', function(e) {
@@ -388,11 +409,9 @@
 						$closer.hide();
 						$nav.hide();
 						$pic.hide();
-
-						$x
-							.attr('src', '')
-							.detach();
-
+							zoomLevel = 1;
+							if ($x && $x.length)
+								$x.css('transform', 'none');
 					})
 					.on('poptrox_open', function(e, index) {
 

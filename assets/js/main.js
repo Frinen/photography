@@ -237,14 +237,20 @@
 	  baseZIndex: 20000,
 	  caption: function ($a) {
 		var $image_img = $a.children('img');
+		if (!$image_img.length || !$image_img.data('name')) return ' ';
+		var src = ($image_img.attr('src') || '');
+		if (!src || src.indexOf('data:image/svg+xml') === 0) return ' ';
 		var data = exifDatas[$image_img.data('name')];
 		if (data === undefined) {
-			// EXIF data					
-			EXIF.getData($image_img[0], function () {
-				data = exifDatas[$image_img.data('name')] = getExifDataMarkup(this);
-			});
+			try {
+				EXIF.getData($image_img[0], function () {
+					data = exifDatas[$image_img.data('name')] = getExifDataMarkup(this);
+				});
+			} catch (err) {
+				return ' ';
+			}
 		}
-		return data !== undefined ? '<p>' + data + '</p>' : ' ';
+		return data !== undefined && data !== '' ? '<p>' + data + '</p>' : ' ';
 	  },
 	  fadeSpeed: 300,
 	  onPopupClose: function () {
