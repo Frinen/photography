@@ -1,566 +1,836 @@
-[
-  {
-    "name": "DSC_7145.jpg",
-    "date_taken": "2026-06-27 19:33:03",
-    "full_path": "/images/fulls/DSC_7145.jpg",
-    "thumb_path": "/images/thumbs/DSC_7145.jpg"
-  },
-  {
-    "name": "DSC_6917.jpg",
-    "date_taken": "2026-06-27 19:23:50",
-    "full_path": "/images/fulls/DSC_6917.jpg",
-    "thumb_path": "/images/thumbs/DSC_6917.jpg"
-  },
-  {
-    "name": "DSC_5362.jpg",
-    "date_taken": "2026-06-27 18:49:14",
-    "full_path": "/images/fulls/DSC_5362.jpg",
-    "thumb_path": "/images/thumbs/DSC_5362.jpg"
-  },
-  {
-    "name": "DSC_4963.jpg",
-    "date_taken": "2026-06-27 18:27:43",
-    "full_path": "/images/fulls/DSC_4963.jpg",
-    "thumb_path": "/images/thumbs/DSC_4963.jpg"
-  },
-  {
-    "name": "DSC_3749.jpg",
-    "date_taken": "2026-06-27 17:51:18",
-    "full_path": "/images/fulls/DSC_3749.jpg",
-    "thumb_path": "/images/thumbs/DSC_3749.jpg"
-  },
-  {
-    "name": "DSC_2103.jpg",
-    "date_taken": "2026-06-27 17:17:37",
-    "full_path": "/images/fulls/DSC_2103.jpg",
-    "thumb_path": "/images/thumbs/DSC_2103.jpg"
-  },
-  {
-    "name": "DSC_1287.jpg",
-    "date_taken": "2026-06-27 16:55:30",
-    "full_path": "/images/fulls/DSC_1287.jpg",
-    "thumb_path": "/images/thumbs/DSC_1287.jpg"
-  },
-  {
-    "name": "DSC_0361.jpg",
-    "date_taken": "2026-06-27 16:32:49",
-    "full_path": "/images/fulls/DSC_0361.jpg",
-    "thumb_path": "/images/thumbs/DSC_0361.jpg"
-  },
-  {
-    "name": "DSC_8582.jpg",
-    "date_taken": "2026-06-21 14:26:59",
-    "full_path": "/images/fulls/DSC_8582.jpg",
-    "thumb_path": "/images/thumbs/DSC_8582.jpg"
-  },
-  {
-    "name": "DSC_8478.jpg",
-    "date_taken": "2026-06-21 14:22:08",
-    "full_path": "/images/fulls/DSC_8478.jpg",
-    "thumb_path": "/images/thumbs/DSC_8478.jpg"
-  },
-  {
-    "name": "DSC_8093.jpg",
-    "date_taken": "2026-06-21 14:01:11",
-    "full_path": "/images/fulls/DSC_8093.jpg",
-    "thumb_path": "/images/thumbs/DSC_8093.jpg"
-  },
-  {
-    "name": "DSC_7580.jpg",
-    "date_taken": "2026-06-21 12:56:15",
-    "full_path": "/images/fulls/DSC_7580.jpg",
-    "thumb_path": "/images/thumbs/DSC_7580.jpg"
-  },
-  {
-    "name": "DSC_7441.jpg",
-    "date_taken": "2026-06-21 12:12:55",
-    "full_path": "/images/fulls/DSC_7441.jpg",
-    "thumb_path": "/images/thumbs/DSC_7441.jpg"
-  },
-  {
-    "name": "DSC_7100.jpg",
-    "date_taken": "2026-06-21 10:44:01",
-    "full_path": "/images/fulls/DSC_7100.jpg",
-    "thumb_path": "/images/thumbs/DSC_7100.jpg"
-  },
-  {
-    "name": "DSC_6591.jpg",
-    "date_taken": "2026-06-21 10:23:42",
-    "full_path": "/images/fulls/DSC_6591.jpg",
-    "thumb_path": "/images/thumbs/DSC_6591.jpg"
-  },
-  {
-    "name": "DSC_6409.jpg",
-    "date_taken": "2026-06-21 08:59:27",
-    "full_path": "/images/fulls/DSC_6409.jpg",
-    "thumb_path": "/images/thumbs/DSC_6409.jpg"
-  },
-  {
-    "name": "DSC_5939.jpg",
-    "date_taken": "2026-06-06 14:33:07",
-    "full_path": "/images/fulls/DSC_5939.jpg",
-    "thumb_path": "/images/thumbs/DSC_5939.jpg"
-  },
-  {
-    "name": "DSC_5855.jpg",
-    "date_taken": "2026-06-06 14:19:39",
-    "full_path": "/images/fulls/DSC_5855.jpg",
-    "thumb_path": "/images/thumbs/DSC_5855.jpg"
-  },
-  {
-    "name": "DSC_5480.jpg",
-    "date_taken": "2026-05-31 16:11:30",
-    "full_path": "/images/fulls/DSC_5480.jpg",
-    "thumb_path": "/images/thumbs/DSC_5480.jpg"
-  },
-  {
-    "name": "DSC_4866.jpg",
-    "date_taken": "2026-05-31 12:11:35",
-    "full_path": "/images/fulls/DSC_4866.jpg",
-    "thumb_path": "/images/thumbs/DSC_4866.jpg"
-  },
-  {
-    "name": "DSC_4526.jpg",
-    "date_taken": "2026-05-31 11:53:37",
-    "full_path": "/images/fulls/DSC_4526.jpg",
-    "thumb_path": "/images/thumbs/DSC_4526.jpg"
-  },
-  {
-    "name": "DSC_3883.jpg",
-    "date_taken": "2026-05-31 10:13:16",
-    "full_path": "/images/fulls/DSC_3883.jpg",
-    "thumb_path": "/images/thumbs/DSC_3883.jpg"
-  },
-  {
-    "name": "DSC_3769.jpg",
-    "date_taken": "2026-05-31 09:54:39",
-    "full_path": "/images/fulls/DSC_3769.jpg",
-    "thumb_path": "/images/thumbs/DSC_3769.jpg"
-  },
-  {
-    "name": "DSC_3746.jpg",
-    "date_taken": "2026-05-31 09:51:57",
-    "full_path": "/images/fulls/DSC_3746.jpg",
-    "thumb_path": "/images/thumbs/DSC_3746.jpg"
-  },
-  {
-    "name": "DSC_3502.jpg",
-    "date_taken": "2026-05-30 19:08:24",
-    "full_path": "/images/fulls/DSC_3502.jpg",
-    "thumb_path": "/images/thumbs/DSC_3502.jpg"
-  },
-  {
-    "name": "DSC_2730.jpg",
-    "date_taken": "2026-05-29 23:18:30",
-    "full_path": "/images/fulls/DSC_2730.jpg",
-    "thumb_path": "/images/thumbs/DSC_2730.jpg"
-  },
-  {
-    "name": "DSC_2351.jpg",
-    "date_taken": "2026-05-29 22:48:50",
-    "full_path": "/images/fulls/DSC_2351.jpg",
-    "thumb_path": "/images/thumbs/DSC_2351.jpg"
-  },
-  {
-    "name": "DSC_0803.jpg",
-    "date_taken": "2026-05-26 22:09:07",
-    "full_path": "/images/fulls/DSC_0803.jpg",
-    "thumb_path": "/images/thumbs/DSC_0803.jpg"
-  },
-  {
-    "name": "DSC_0559.jpg",
-    "date_taken": "2026-05-26 21:48:43",
-    "full_path": "/images/fulls/DSC_0559.jpg",
-    "thumb_path": "/images/thumbs/DSC_0559.jpg"
-  },
-  {
-    "name": "DSC_7210.jpg",
-    "date_taken": "2026-05-25 21:03:27",
-    "full_path": "/images/fulls/DSC_7210.jpg",
-    "thumb_path": "/images/thumbs/DSC_7210.jpg"
-  },
-  {
-    "name": "DSC_5235.jpg",
-    "date_taken": "2026-05-24 18:01:38",
-    "full_path": "/images/fulls/DSC_5235.jpg",
-    "thumb_path": "/images/thumbs/DSC_5235.jpg"
-  },
-  {
-    "name": "DSC_3284.jpg",
-    "date_taken": "2026-05-23 14:19:34",
-    "full_path": "/images/fulls/DSC_3284.jpg",
-    "thumb_path": "/images/thumbs/DSC_3284.jpg"
-  },
-  {
-    "name": "DSC_3250.jpg",
-    "date_taken": "2026-05-23 14:07:29",
-    "full_path": "/images/fulls/DSC_3250.jpg",
-    "thumb_path": "/images/thumbs/DSC_3250.jpg"
-  },
-  {
-    "name": "DSC_3161.jpg",
-    "date_taken": "2026-05-23 13:41:05",
-    "full_path": "/images/fulls/DSC_3161.jpg",
-    "thumb_path": "/images/thumbs/DSC_3161.jpg"
-  },
-  {
-    "name": "DSC_3126.jpg",
-    "date_taken": "2026-05-23 13:04:14",
-    "full_path": "/images/fulls/DSC_3126.jpg",
-    "thumb_path": "/images/thumbs/DSC_3126.jpg"
-  },
-  {
-    "name": "DSC_1296.jpg",
-    "date_taken": "2026-05-05 21:33:19",
-    "full_path": "/images/fulls/DSC_1296.jpg",
-    "thumb_path": "/images/thumbs/DSC_1296.jpg"
-  },
-  {
-    "name": "DSC_0942.jpg",
-    "date_taken": "2026-05-04 21:14:10",
-    "full_path": "/images/fulls/DSC_0942.jpg",
-    "thumb_path": "/images/thumbs/DSC_0942.jpg"
-  },
-  {
-    "name": "DSC_5285-2.jpg",
-    "date_taken": "2026-04-29 23:40:58",
-    "full_path": "/images/fulls/DSC_5285-2.jpg",
-    "thumb_path": "/images/thumbs/DSC_5285-2.jpg"
-  },
-  {
-    "name": "DSC_3758.jpg",
-    "date_taken": "2026-04-28 23:29:46",
-    "full_path": "/images/fulls/DSC_3758.jpg",
-    "thumb_path": "/images/thumbs/DSC_3758.jpg"
-  },
-  {
-    "name": "DSC_3734.jpg",
-    "date_taken": "2026-04-28 23:15:43",
-    "full_path": "/images/fulls/DSC_3734.jpg",
-    "thumb_path": "/images/thumbs/DSC_3734.jpg"
-  },
-  {
-    "name": "DSC_3688.jpg",
-    "date_taken": "2026-04-28 23:06:39",
-    "full_path": "/images/fulls/DSC_3688.jpg",
-    "thumb_path": "/images/thumbs/DSC_3688.jpg"
-  },
-  {
-    "name": "DSC_5014.jpg",
-    "date_taken": "2026-04-28 19:32:21",
-    "full_path": "/images/fulls/DSC_5014.jpg",
-    "thumb_path": "/images/thumbs/DSC_5014.jpg"
-  },
-  {
-    "name": "DSC_4079.jpg",
-    "date_taken": "2026-04-28 18:10:27",
-    "full_path": "/images/fulls/DSC_4079.jpg",
-    "thumb_path": "/images/thumbs/DSC_4079.jpg"
-  },
-  {
-    "name": "DSC_3860.jpg",
-    "date_taken": "2026-04-28 15:39:05",
-    "full_path": "/images/fulls/DSC_3860.jpg",
-    "thumb_path": "/images/thumbs/DSC_3860.jpg"
-  },
-  {
-    "name": "DSC_9963.jpg",
-    "date_taken": "2026-04-26 14:19:53",
-    "full_path": "/images/fulls/DSC_9963.jpg",
-    "thumb_path": "/images/thumbs/DSC_9963.jpg"
-  },
-  {
-    "name": "DSC_8204.jpg",
-    "date_taken": "2026-04-23 19:52:34",
-    "full_path": "/images/fulls/DSC_8204.jpg",
-    "thumb_path": "/images/thumbs/DSC_8204.jpg"
-  },
-  {
-    "name": "DSC_8088.jpg",
-    "date_taken": "2026-04-23 18:52:34",
-    "full_path": "/images/fulls/DSC_8088.jpg",
-    "thumb_path": "/images/thumbs/DSC_8088.jpg"
-  },
-  {
-    "name": "DSC_7846.jpg",
-    "date_taken": "2026-04-23 17:53:57",
-    "full_path": "/images/fulls/DSC_7846.jpg",
-    "thumb_path": "/images/thumbs/DSC_7846.jpg"
-  },
-  {
-    "name": "DSC_7277.jpg",
-    "date_taken": "2026-04-22 21:33:44",
-    "full_path": "/images/fulls/DSC_7277.jpg",
-    "thumb_path": "/images/thumbs/DSC_7277.jpg"
-  },
-  {
-    "name": "DSC_7064.jpg",
-    "date_taken": "2026-04-22 21:13:42",
-    "full_path": "/images/fulls/DSC_7064.jpg",
-    "thumb_path": "/images/thumbs/DSC_7064.jpg"
-  },
-  {
-    "name": "DSC_7011.jpg",
-    "date_taken": "2026-04-22 21:08:13",
-    "full_path": "/images/fulls/DSC_7011.jpg",
-    "thumb_path": "/images/thumbs/DSC_7011.jpg"
-  },
-  {
-    "name": "DSC_6967.jpg",
-    "date_taken": "2026-04-22 21:01:51",
-    "full_path": "/images/fulls/DSC_6967.jpg",
-    "thumb_path": "/images/thumbs/DSC_6967.jpg"
-  },
-  {
-    "name": "DSC_6907.jpg",
-    "date_taken": "2026-04-22 00:48:04",
-    "full_path": "/images/fulls/DSC_6907.jpg",
-    "thumb_path": "/images/thumbs/DSC_6907.jpg"
-  },
-  {
-    "name": "DSC_6603.jpg",
-    "date_taken": "2026-04-22 00:06:21",
-    "full_path": "/images/fulls/DSC_6603.jpg",
-    "thumb_path": "/images/thumbs/DSC_6603.jpg"
-  },
-  {
-    "name": "DSC_5984.jpg",
-    "date_taken": "2026-04-20 22:39:31",
-    "full_path": "/images/fulls/DSC_5984.jpg",
-    "thumb_path": "/images/thumbs/DSC_5984.jpg"
-  },
-  {
-    "name": "DSC_5940.jpg",
-    "date_taken": "2026-04-20 22:36:20",
-    "full_path": "/images/fulls/DSC_5940.jpg",
-    "thumb_path": "/images/thumbs/DSC_5940.jpg"
-  },
-  {
-    "name": "DSC_2962.jpg",
-    "date_taken": "2026-04-15 22:15:05",
-    "full_path": "/images/fulls/DSC_2962.jpg",
-    "thumb_path": "/images/thumbs/DSC_2962.jpg"
-  },
-  {
-    "name": "DSC_2946.jpg",
-    "date_taken": "2026-04-15 22:14:06",
-    "full_path": "/images/fulls/DSC_2946.jpg",
-    "thumb_path": "/images/thumbs/DSC_2946.jpg"
-  },
-  {
-    "name": "DSC_1613.jpg",
-    "date_taken": "2026-04-12 23:33:55",
-    "full_path": "/images/fulls/DSC_1613.jpg",
-    "thumb_path": "/images/thumbs/DSC_1613.jpg"
-  },
-  {
-    "name": "DSC_1231.jpg",
-    "date_taken": "2026-04-12 20:36:26",
-    "full_path": "/images/fulls/DSC_1231.jpg",
-    "thumb_path": "/images/thumbs/DSC_1231.jpg"
-  },
-  {
-    "name": "DSC_9306.jpg",
-    "date_taken": "2026-04-02 22:41:09",
-    "full_path": "/images/fulls/DSC_9306.jpg",
-    "thumb_path": "/images/thumbs/DSC_9306.jpg"
-  },
-  {
-    "name": "DSC_8239.jpg",
-    "date_taken": "2026-04-02 11:12:35",
-    "full_path": "/images/fulls/DSC_8239.jpg",
-    "thumb_path": "/images/thumbs/DSC_8239.jpg"
-  },
-  {
-    "name": "DSC_8192.jpg",
-    "date_taken": "2026-04-02 11:04:58",
-    "full_path": "/images/fulls/DSC_8192.jpg",
-    "thumb_path": "/images/thumbs/DSC_8192.jpg"
-  },
-  {
-    "name": "DSC_0119.jpg",
-    "date_taken": "2026-03-29 17:46:48",
-    "full_path": "/images/fulls/DSC_0119.jpg",
-    "thumb_path": "/images/thumbs/DSC_0119.jpg"
-  },
-  {
-    "name": "DSC_9693.jpg",
-    "date_taken": "2026-03-29 17:15:01",
-    "full_path": "/images/fulls/DSC_9693.jpg",
-    "thumb_path": "/images/thumbs/DSC_9693.jpg"
-  },
-  {
-    "name": "DSC_7662.jpg",
-    "date_taken": "2026-03-28 09:08:31",
-    "full_path": "/images/fulls/DSC_7662.jpg",
-    "thumb_path": "/images/thumbs/DSC_7662.jpg"
-  },
-  {
-    "name": "DSC_2309.jpg",
-    "date_taken": "2026-03-08 07:59:38",
-    "full_path": "/images/fulls/DSC_2309.jpg",
-    "thumb_path": "/images/thumbs/DSC_2309.jpg"
-  },
-  {
-    "name": "DSC_2149.jpg",
-    "date_taken": "2026-03-08 07:05:16",
-    "full_path": "/images/fulls/DSC_2149.jpg",
-    "thumb_path": "/images/thumbs/DSC_2149.jpg"
-  },
-  {
-    "name": "DSC_1837.jpg",
-    "date_taken": "2026-03-08 06:39:25",
-    "full_path": "/images/fulls/DSC_1837.jpg",
-    "thumb_path": "/images/thumbs/DSC_1837.jpg"
-  },
-  {
-    "name": "DSC_0880.jpg",
-    "date_taken": "2026-03-08 04:44:21",
-    "full_path": "/images/fulls/DSC_0880.jpg",
-    "thumb_path": "/images/thumbs/DSC_0880.jpg"
-  },
-  {
-    "name": "DSC_0739.jpg",
-    "date_taken": "2026-03-08 04:06:14",
-    "full_path": "/images/fulls/DSC_0739.jpg",
-    "thumb_path": "/images/thumbs/DSC_0739.jpg"
-  },
-  {
-    "name": "DSC_0270.jpg",
-    "date_taken": "2026-03-04 22:04:20",
-    "full_path": "/images/fulls/DSC_0270.jpg",
-    "thumb_path": "/images/thumbs/DSC_0270.jpg"
-  },
-  {
-    "name": "DSC_0254.jpg",
-    "date_taken": "2026-03-04 21:59:18",
-    "full_path": "/images/fulls/DSC_0254.jpg",
-    "thumb_path": "/images/thumbs/DSC_0254.jpg"
-  },
-  {
-    "name": "DSC_0178.jpg",
-    "date_taken": "2026-03-04 21:27:58",
-    "full_path": "/images/fulls/DSC_0178.jpg",
-    "thumb_path": "/images/thumbs/DSC_0178.jpg"
-  },
-  {
-    "name": "IMG_0578.jpg",
-    "date_taken": "2026-01-31 22:25:26",
-    "full_path": "/images/fulls/IMG_0578.jpg",
-    "thumb_path": "/images/thumbs/IMG_0578.jpg"
-  },
-  {
-    "name": "IMG_0481.jpg",
-    "date_taken": "2026-01-08 14:32:26",
-    "full_path": "/images/fulls/IMG_0481.jpg",
-    "thumb_path": "/images/thumbs/IMG_0481.jpg"
-  },
-  {
-    "name": "IMG_0443.jpg",
-    "date_taken": "2026-01-08 13:59:38",
-    "full_path": "/images/fulls/IMG_0443.jpg",
-    "thumb_path": "/images/thumbs/IMG_0443.jpg"
-  },
-  {
-    "name": "IMG_0369.jpg",
-    "date_taken": "2026-01-07 00:35:38",
-    "full_path": "/images/fulls/IMG_0369.jpg",
-    "thumb_path": "/images/thumbs/IMG_0369.jpg"
-  },
-  {
-    "name": "IMG_0086.jpg",
-    "date_taken": "2025-12-30 02:03:45",
-    "full_path": "/images/fulls/IMG_0086.jpg",
-    "thumb_path": "/images/thumbs/IMG_0086.jpg"
-  },
-  {
-    "name": "IMG_9913.jpg",
-    "date_taken": "2025-12-19 16:16:30",
-    "full_path": "/images/fulls/IMG_9913.jpg",
-    "thumb_path": "/images/thumbs/IMG_9913.jpg"
-  },
-  {
-    "name": "IMG_9490.jpg",
-    "date_taken": "2025-11-29 16:22:58",
-    "full_path": "/images/fulls/IMG_9490.jpg",
-    "thumb_path": "/images/thumbs/IMG_9490.jpg"
-  },
-  {
-    "name": "IMG_9159.jpg",
-    "date_taken": "2025-11-29 14:46:31",
-    "full_path": "/images/fulls/IMG_9159.jpg",
-    "thumb_path": "/images/thumbs/IMG_9159.jpg"
-  },
-  {
-    "name": "IMG_9106.jpg",
-    "date_taken": "2025-11-29 14:31:08",
-    "full_path": "/images/fulls/IMG_9106.jpg",
-    "thumb_path": "/images/thumbs/IMG_9106.jpg"
-  },
-  {
-    "name": "IMG_8160.jpg",
-    "date_taken": "2025-11-02 23:53:58",
-    "full_path": "/images/fulls/IMG_8160.jpg",
-    "thumb_path": "/images/thumbs/IMG_8160.jpg"
-  },
-  {
-    "name": "IMG_7241.jpg",
-    "date_taken": "2025-10-25 22:49:31",
-    "full_path": "/images/fulls/IMG_7241.jpg",
-    "thumb_path": "/images/thumbs/IMG_7241.jpg"
-  },
-  {
-    "name": "IMG_6426.jpg",
-    "date_taken": "2025-09-07 17:24:15",
-    "full_path": "/images/fulls/IMG_6426.jpg",
-    "thumb_path": "/images/thumbs/IMG_6426.jpg"
-  },
-  {
-    "name": "IMG_6109.jpg",
-    "date_taken": "2025-09-07 14:20:31",
-    "full_path": "/images/fulls/IMG_6109.jpg",
-    "thumb_path": "/images/thumbs/IMG_6109.jpg"
-  },
-  {
-    "name": "IMG_6080.jpg",
-    "date_taken": "2025-09-07 14:13:08",
-    "full_path": "/images/fulls/IMG_6080.jpg",
-    "thumb_path": "/images/thumbs/IMG_6080.jpg"
-  },
-  {
-    "name": "IMG_5569.jpg",
-    "date_taken": "2025-08-17 16:34:57",
-    "full_path": "/images/fulls/IMG_5569.jpg",
-    "thumb_path": "/images/thumbs/IMG_5569.jpg"
-  },
-  {
-    "name": "IMG_5157.jpg",
-    "date_taken": "2025-08-17 15:03:38",
-    "full_path": "/images/fulls/IMG_5157.jpg",
-    "thumb_path": "/images/thumbs/IMG_5157.jpg"
-  },
-  {
-    "name": "IMG_5028.jpg",
-    "date_taken": "2025-08-17 14:19:04",
-    "full_path": "/images/fulls/IMG_5028.jpg",
-    "thumb_path": "/images/thumbs/IMG_5028.jpg"
-  },
-  {
-    "name": "IMG_4966.jpg",
-    "date_taken": "2025-08-17 13:50:41",
-    "full_path": "/images/fulls/IMG_4966.jpg",
-    "thumb_path": "/images/thumbs/IMG_4966.jpg"
-  },
-  {
-    "name": "IMG_4963.jpg",
-    "date_taken": "2025-08-17 13:48:37",
-    "full_path": "/images/fulls/IMG_4963.jpg",
-    "thumb_path": "/images/thumbs/IMG_4963.jpg"
-  },
-  {
-    "name": "IMG_3652.jpg",
-    "date_taken": "2025-07-26 13:53:04",
-    "full_path": "/images/fulls/IMG_3652.jpg",
-    "thumb_path": "/images/thumbs/IMG_3652.jpg"
-  }
+﻿[
+    {
+        "name":  "DSC_1896.jpg",
+        "date_taken":  "2026-10-25 01:11:04",
+        "full_path":  "/photography/images/fulls/DSC_1896.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_1896.jpg"
+    },
+    {
+        "name":  "DSC_0361 (2).jpg",
+        "date_taken":  "2026-10-24 13:48:47",
+        "full_path":  "/photography/images/fulls/DSC_0361 (2).jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_0361 (2).jpg"
+    },
+    {
+        "name":  "DSC_9815.jpg",
+        "date_taken":  "2026-10-24 12:09:29",
+        "full_path":  "/photography/images/fulls/DSC_9815.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_9815.jpg"
+    },
+    {
+        "name":  "DSC_9524.jpg",
+        "date_taken":  "2026-10-19 21:57:08",
+        "full_path":  "/photography/images/fulls/DSC_9524.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_9524.jpg"
+    },
+    {
+        "name":  "DSC_2861.jpg",
+        "date_taken":  "2026-10-18 14:24:41",
+        "full_path":  "/photography/images/fulls/DSC_2861.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_2861.jpg"
+    },
+    {
+        "name":  "DSC_1206.jpg",
+        "date_taken":  "2026-10-18 12:24:39",
+        "full_path":  "/photography/images/fulls/DSC_1206.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_1206.jpg"
+    },
+    {
+        "name":  "DSC_8993.jpg",
+        "date_taken":  "2026-10-18 10:53:43",
+        "full_path":  "/photography/images/fulls/DSC_8993.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_8993.jpg"
+    },
+    {
+        "name":  "DSC_5057.jpg",
+        "date_taken":  "2026-10-17 13:52:24",
+        "full_path":  "/photography/images/fulls/DSC_5057.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_5057.jpg"
+    },
+    {
+        "name":  "DSC_7187.jpg",
+        "date_taken":  "2026-09-20 20:32:54",
+        "full_path":  "/photography/images/fulls/DSC_7187.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_7187.jpg"
+    },
+    {
+        "name":  "DSC_6642.jpg",
+        "date_taken":  "2026-09-20 20:24:14",
+        "full_path":  "/photography/images/fulls/DSC_6642.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_6642.jpg"
+    },
+    {
+        "name":  "DSC_3831.jpg",
+        "date_taken":  "2026-09-20 19:54:33",
+        "full_path":  "/photography/images/fulls/DSC_3831.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_3831.jpg"
+    },
+    {
+        "name":  "DSC_2217.jpg",
+        "date_taken":  "2026-09-20 19:02:31",
+        "full_path":  "/photography/images/fulls/DSC_2217.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_2217.jpg"
+    },
+    {
+        "name":  "DSC_1793.jpg",
+        "date_taken":  "2026-09-20 18:55:40",
+        "full_path":  "/photography/images/fulls/DSC_1793.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_1793.jpg"
+    },
+    {
+        "name":  "DSC_1371.jpg",
+        "date_taken":  "2026-09-20 18:47:41",
+        "full_path":  "/photography/images/fulls/DSC_1371.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_1371.jpg"
+    },
+    {
+        "name":  "DSC_0695.jpg",
+        "date_taken":  "2026-09-18 08:51:33",
+        "full_path":  "/photography/images/fulls/DSC_0695.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_0695.jpg"
+    },
+    {
+        "name":  "DSC_0653.jpg",
+        "date_taken":  "2026-09-18 08:27:33",
+        "full_path":  "/photography/images/fulls/DSC_0653.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_0653.jpg"
+    },
+    {
+        "name":  "DSC_9767.jpg",
+        "date_taken":  "2026-09-17 10:51:07",
+        "full_path":  "/photography/images/fulls/DSC_9767.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_9767.jpg"
+    },
+    {
+        "name":  "DSC_9738.jpg",
+        "date_taken":  "2026-09-17 10:45:40",
+        "full_path":  "/photography/images/fulls/DSC_9738.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_9738.jpg"
+    },
+    {
+        "name":  "DSC_8538.jpg",
+        "date_taken":  "2026-09-17 06:58:24",
+        "full_path":  "/photography/images/fulls/DSC_8538.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_8538.jpg"
+    },
+    {
+        "name":  "DSC_2492-2.jpg",
+        "date_taken":  "2026-08-23 14:31:35",
+        "full_path":  "/photography/images/fulls/DSC_2492-2.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_2492-2.jpg"
+    },
+    {
+        "name":  "DSC_0913.jpg",
+        "date_taken":  "2026-08-15 13:48:53",
+        "full_path":  "/photography/images/fulls/DSC_0913.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_0913.jpg"
+    },
+    {
+        "name":  "DSC_0448.jpg",
+        "date_taken":  "2026-08-15 11:10:56",
+        "full_path":  "/photography/images/fulls/DSC_0448.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_0448.jpg"
+    },
+    {
+        "name":  "DSC_0328.jpg",
+        "date_taken":  "2026-08-15 11:02:22",
+        "full_path":  "/photography/images/fulls/DSC_0328.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_0328.jpg"
+    },
+    {
+        "name":  "DSC_6939.jpg",
+        "date_taken":  "2026-07-31 14:48:12",
+        "full_path":  "/photography/images/fulls/DSC_6939.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_6939.jpg"
+    },
+    {
+        "name":  "DSC_6920.jpg",
+        "date_taken":  "2026-07-31 13:06:53",
+        "full_path":  "/photography/images/fulls/DSC_6920.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_6920.jpg"
+    },
+    {
+        "name":  "DSC_5741.jpg",
+        "date_taken":  "2026-07-30 19:17:08",
+        "full_path":  "/photography/images/fulls/DSC_5741.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_5741.jpg"
+    },
+    {
+        "name":  "DSC_5444.jpg",
+        "date_taken":  "2026-07-30 10:04:33",
+        "full_path":  "/photography/images/fulls/DSC_5444.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_5444.jpg"
+    },
+    {
+        "name":  "DSC_5167.jpg",
+        "date_taken":  "2026-07-29 12:32:36",
+        "full_path":  "/photography/images/fulls/DSC_5167.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_5167.jpg"
+    },
+    {
+        "name":  "DSC_4981.jpg",
+        "date_taken":  "2026-07-28 16:17:04",
+        "full_path":  "/photography/images/fulls/DSC_4981.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_4981.jpg"
+    },
+    {
+        "name":  "DSC_4163.jpg",
+        "date_taken":  "2026-07-27 15:06:50",
+        "full_path":  "/photography/images/fulls/DSC_4163.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_4163.jpg"
+    },
+    {
+        "name":  "DSC_3781.jpg",
+        "date_taken":  "2026-07-27 13:54:57",
+        "full_path":  "/photography/images/fulls/DSC_3781.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_3781.jpg"
+    },
+    {
+        "name":  "DSC_3632.jpg",
+        "date_taken":  "2026-07-26 22:10:25",
+        "full_path":  "/photography/images/fulls/DSC_3632.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_3632.jpg"
+    },
+    {
+        "name":  "DSC_3431.jpg",
+        "date_taken":  "2026-07-26 15:29:07",
+        "full_path":  "/photography/images/fulls/DSC_3431.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_3431.jpg"
+    },
+    {
+        "name":  "DSC_2607.jpg",
+        "date_taken":  "2026-07-25 17:11:06",
+        "full_path":  "/photography/images/fulls/DSC_2607.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_2607.jpg"
+    },
+    {
+        "name":  "DSC_1675.jpg",
+        "date_taken":  "2026-07-23 19:08:50",
+        "full_path":  "/photography/images/fulls/DSC_1675.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_1675.jpg"
+    },
+    {
+        "name":  "DSC_1130.jpg",
+        "date_taken":  "2026-07-22 19:42:37",
+        "full_path":  "/photography/images/fulls/DSC_1130.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_1130.jpg"
+    },
+    {
+        "name":  "DSC_0407.jpg",
+        "date_taken":  "2026-07-21 20:54:19",
+        "full_path":  "/photography/images/fulls/DSC_0407.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_0407.jpg"
+    },
+    {
+        "name":  "DSC_0234.jpg",
+        "date_taken":  "2026-07-21 20:27:39",
+        "full_path":  "/photography/images/fulls/DSC_0234.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_0234.jpg"
+    },
+    {
+        "name":  "DSC_0096.jpg",
+        "date_taken":  "2026-07-21 20:19:30",
+        "full_path":  "/photography/images/fulls/DSC_0096.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_0096.jpg"
+    },
+    {
+        "name":  "DSC_9849.jpg",
+        "date_taken":  "2026-07-21 19:52:06",
+        "full_path":  "/photography/images/fulls/DSC_9849.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_9849.jpg"
+    },
+    {
+        "name":  "DSC_9760.jpg",
+        "date_taken":  "2026-07-21 19:45:16",
+        "full_path":  "/photography/images/fulls/DSC_9760.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_9760.jpg"
+    },
+    {
+        "name":  "DSC_9236.jpg",
+        "date_taken":  "2026-07-20 18:54:15",
+        "full_path":  "/photography/images/fulls/DSC_9236.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_9236.jpg"
+    },
+    {
+        "name":  "DSC_8358.jpg",
+        "date_taken":  "2026-07-19 20:30:42",
+        "full_path":  "/photography/images/fulls/DSC_8358.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_8358.jpg"
+    },
+    {
+        "name":  "DSC_8262.jpg",
+        "date_taken":  "2026-07-19 20:19:38",
+        "full_path":  "/photography/images/fulls/DSC_8262.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_8262.jpg"
+    },
+    {
+        "name":  "DSC_7863.jpg",
+        "date_taken":  "2026-07-19 11:22:14",
+        "full_path":  "/photography/images/fulls/DSC_7863.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_7863.jpg"
+    },
+    {
+        "name":  "DSC_7145.jpg",
+        "date_taken":  "2026-06-27 19:33:03",
+        "full_path":  "/photography/images/fulls/DSC_7145.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_7145.jpg"
+    },
+    {
+        "name":  "DSC_6917.jpg",
+        "date_taken":  "2026-06-27 19:23:50",
+        "full_path":  "/photography/images/fulls/DSC_6917.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_6917.jpg"
+    },
+    {
+        "name":  "DSC_5362.jpg",
+        "date_taken":  "2026-06-27 18:49:14",
+        "full_path":  "/photography/images/fulls/DSC_5362.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_5362.jpg"
+    },
+    {
+        "name":  "DSC_4963.jpg",
+        "date_taken":  "2026-06-27 18:27:43",
+        "full_path":  "/photography/images/fulls/DSC_4963.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_4963.jpg"
+    },
+    {
+        "name":  "DSC_3749.jpg",
+        "date_taken":  "2026-06-27 17:51:18",
+        "full_path":  "/photography/images/fulls/DSC_3749.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_3749.jpg"
+    },
+    {
+        "name":  "DSC_2103.jpg",
+        "date_taken":  "2026-06-27 17:17:37",
+        "full_path":  "/photography/images/fulls/DSC_2103.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_2103.jpg"
+    },
+    {
+        "name":  "DSC_1287.jpg",
+        "date_taken":  "2026-06-27 16:55:30",
+        "full_path":  "/photography/images/fulls/DSC_1287.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_1287.jpg"
+    },
+    {
+        "name":  "DSC_0361.jpg",
+        "date_taken":  "2026-06-27 16:32:49",
+        "full_path":  "/photography/images/fulls/DSC_0361.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_0361.jpg"
+    },
+    {
+        "name":  "DSC_8582.jpg",
+        "date_taken":  "2026-06-21 14:26:59",
+        "full_path":  "/photography/images/fulls/DSC_8582.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_8582.jpg"
+    },
+    {
+        "name":  "DSC_8478.jpg",
+        "date_taken":  "2026-06-21 14:22:08",
+        "full_path":  "/photography/images/fulls/DSC_8478.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_8478.jpg"
+    },
+    {
+        "name":  "DSC_8093.jpg",
+        "date_taken":  "2026-06-21 14:01:11",
+        "full_path":  "/photography/images/fulls/DSC_8093.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_8093.jpg"
+    },
+    {
+        "name":  "DSC_7580.jpg",
+        "date_taken":  "2026-06-21 12:56:15",
+        "full_path":  "/photography/images/fulls/DSC_7580.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_7580.jpg"
+    },
+    {
+        "name":  "DSC_7441.jpg",
+        "date_taken":  "2026-06-21 12:12:55",
+        "full_path":  "/photography/images/fulls/DSC_7441.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_7441.jpg"
+    },
+    {
+        "name":  "DSC_7100.jpg",
+        "date_taken":  "2026-06-21 10:44:01",
+        "full_path":  "/photography/images/fulls/DSC_7100.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_7100.jpg"
+    },
+    {
+        "name":  "DSC_6591.jpg",
+        "date_taken":  "2026-06-21 10:23:42",
+        "full_path":  "/photography/images/fulls/DSC_6591.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_6591.jpg"
+    },
+    {
+        "name":  "DSC_6409.jpg",
+        "date_taken":  "2026-06-21 08:59:27",
+        "full_path":  "/photography/images/fulls/DSC_6409.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_6409.jpg"
+    },
+    {
+        "name":  "DSC_5939.jpg",
+        "date_taken":  "2026-06-06 14:33:07",
+        "full_path":  "/photography/images/fulls/DSC_5939.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_5939.jpg"
+    },
+    {
+        "name":  "DSC_5855.jpg",
+        "date_taken":  "2026-06-06 14:19:39",
+        "full_path":  "/photography/images/fulls/DSC_5855.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_5855.jpg"
+    },
+    {
+        "name":  "DSC_5480.jpg",
+        "date_taken":  "2026-05-31 16:11:30",
+        "full_path":  "/photography/images/fulls/DSC_5480.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_5480.jpg"
+    },
+    {
+        "name":  "DSC_4866.jpg",
+        "date_taken":  "2026-05-31 12:11:35",
+        "full_path":  "/photography/images/fulls/DSC_4866.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_4866.jpg"
+    },
+    {
+        "name":  "DSC_4526.jpg",
+        "date_taken":  "2026-05-31 11:53:37",
+        "full_path":  "/photography/images/fulls/DSC_4526.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_4526.jpg"
+    },
+    {
+        "name":  "DSC_3883.jpg",
+        "date_taken":  "2026-05-31 10:13:16",
+        "full_path":  "/photography/images/fulls/DSC_3883.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_3883.jpg"
+    },
+    {
+        "name":  "DSC_3769.jpg",
+        "date_taken":  "2026-05-31 09:54:39",
+        "full_path":  "/photography/images/fulls/DSC_3769.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_3769.jpg"
+    },
+    {
+        "name":  "DSC_3746.jpg",
+        "date_taken":  "2026-05-31 09:51:57",
+        "full_path":  "/photography/images/fulls/DSC_3746.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_3746.jpg"
+    },
+    {
+        "name":  "DSC_3502.jpg",
+        "date_taken":  "2026-05-30 19:08:24",
+        "full_path":  "/photography/images/fulls/DSC_3502.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_3502.jpg"
+    },
+    {
+        "name":  "DSC_2730.jpg",
+        "date_taken":  "2026-05-29 23:18:30",
+        "full_path":  "/photography/images/fulls/DSC_2730.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_2730.jpg"
+    },
+    {
+        "name":  "DSC_2351.jpg",
+        "date_taken":  "2026-05-29 22:48:50",
+        "full_path":  "/photography/images/fulls/DSC_2351.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_2351.jpg"
+    },
+    {
+        "name":  "DSC_0803.jpg",
+        "date_taken":  "2026-05-26 22:09:07",
+        "full_path":  "/photography/images/fulls/DSC_0803.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_0803.jpg"
+    },
+    {
+        "name":  "DSC_0559.jpg",
+        "date_taken":  "2026-05-26 21:48:43",
+        "full_path":  "/photography/images/fulls/DSC_0559.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_0559.jpg"
+    },
+    {
+        "name":  "DSC_7210.jpg",
+        "date_taken":  "2026-05-25 21:03:27",
+        "full_path":  "/photography/images/fulls/DSC_7210.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_7210.jpg"
+    },
+    {
+        "name":  "DSC_5235.jpg",
+        "date_taken":  "2026-05-24 18:01:38",
+        "full_path":  "/photography/images/fulls/DSC_5235.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_5235.jpg"
+    },
+    {
+        "name":  "DSC_3284.jpg",
+        "date_taken":  "2026-05-23 14:19:34",
+        "full_path":  "/photography/images/fulls/DSC_3284.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_3284.jpg"
+    },
+    {
+        "name":  "DSC_3250.jpg",
+        "date_taken":  "2026-05-23 14:07:29",
+        "full_path":  "/photography/images/fulls/DSC_3250.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_3250.jpg"
+    },
+    {
+        "name":  "DSC_3161.jpg",
+        "date_taken":  "2026-05-23 13:41:05",
+        "full_path":  "/photography/images/fulls/DSC_3161.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_3161.jpg"
+    },
+    {
+        "name":  "DSC_3126.jpg",
+        "date_taken":  "2026-05-23 13:04:14",
+        "full_path":  "/photography/images/fulls/DSC_3126.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_3126.jpg"
+    },
+    {
+        "name":  "DSC_1296.jpg",
+        "date_taken":  "2026-05-05 21:33:19",
+        "full_path":  "/photography/images/fulls/DSC_1296.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_1296.jpg"
+    },
+    {
+        "name":  "DSC_0942.jpg",
+        "date_taken":  "2026-05-04 21:14:10",
+        "full_path":  "/photography/images/fulls/DSC_0942.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_0942.jpg"
+    },
+    {
+        "name":  "DSC_5285-2.jpg",
+        "date_taken":  "2026-04-29 23:40:58",
+        "full_path":  "/photography/images/fulls/DSC_5285-2.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_5285-2.jpg"
+    },
+    {
+        "name":  "DSC_3758.jpg",
+        "date_taken":  "2026-04-28 23:29:46",
+        "full_path":  "/photography/images/fulls/DSC_3758.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_3758.jpg"
+    },
+    {
+        "name":  "DSC_3734.jpg",
+        "date_taken":  "2026-04-28 23:15:43",
+        "full_path":  "/photography/images/fulls/DSC_3734.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_3734.jpg"
+    },
+    {
+        "name":  "DSC_3688.jpg",
+        "date_taken":  "2026-04-28 23:06:39",
+        "full_path":  "/photography/images/fulls/DSC_3688.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_3688.jpg"
+    },
+    {
+        "name":  "DSC_5014.jpg",
+        "date_taken":  "2026-04-28 19:32:21",
+        "full_path":  "/photography/images/fulls/DSC_5014.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_5014.jpg"
+    },
+    {
+        "name":  "DSC_4079.jpg",
+        "date_taken":  "2026-04-28 18:10:27",
+        "full_path":  "/photography/images/fulls/DSC_4079.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_4079.jpg"
+    },
+    {
+        "name":  "DSC_3860.jpg",
+        "date_taken":  "2026-04-28 15:39:05",
+        "full_path":  "/photography/images/fulls/DSC_3860.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_3860.jpg"
+    },
+    {
+        "name":  "DSC_9963.jpg",
+        "date_taken":  "2026-04-26 14:19:53",
+        "full_path":  "/photography/images/fulls/DSC_9963.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_9963.jpg"
+    },
+    {
+        "name":  "DSC_8204.jpg",
+        "date_taken":  "2026-04-23 19:52:34",
+        "full_path":  "/photography/images/fulls/DSC_8204.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_8204.jpg"
+    },
+    {
+        "name":  "DSC_8088.jpg",
+        "date_taken":  "2026-04-23 18:52:34",
+        "full_path":  "/photography/images/fulls/DSC_8088.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_8088.jpg"
+    },
+    {
+        "name":  "DSC_7846.jpg",
+        "date_taken":  "2026-04-23 17:53:57",
+        "full_path":  "/photography/images/fulls/DSC_7846.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_7846.jpg"
+    },
+    {
+        "name":  "DSC_7277.jpg",
+        "date_taken":  "2026-04-22 21:33:44",
+        "full_path":  "/photography/images/fulls/DSC_7277.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_7277.jpg"
+    },
+    {
+        "name":  "DSC_7064.jpg",
+        "date_taken":  "2026-04-22 21:13:42",
+        "full_path":  "/photography/images/fulls/DSC_7064.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_7064.jpg"
+    },
+    {
+        "name":  "DSC_7011.jpg",
+        "date_taken":  "2026-04-22 21:08:13",
+        "full_path":  "/photography/images/fulls/DSC_7011.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_7011.jpg"
+    },
+    {
+        "name":  "DSC_6967.jpg",
+        "date_taken":  "2026-04-22 21:01:51",
+        "full_path":  "/photography/images/fulls/DSC_6967.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_6967.jpg"
+    },
+    {
+        "name":  "DSC_6907.jpg",
+        "date_taken":  "2026-04-22 00:48:04",
+        "full_path":  "/photography/images/fulls/DSC_6907.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_6907.jpg"
+    },
+    {
+        "name":  "DSC_6603.jpg",
+        "date_taken":  "2026-04-22 00:06:21",
+        "full_path":  "/photography/images/fulls/DSC_6603.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_6603.jpg"
+    },
+    {
+        "name":  "DSC_5984.jpg",
+        "date_taken":  "2026-04-20 22:39:31",
+        "full_path":  "/photography/images/fulls/DSC_5984.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_5984.jpg"
+    },
+    {
+        "name":  "DSC_5940.jpg",
+        "date_taken":  "2026-04-20 22:36:20",
+        "full_path":  "/photography/images/fulls/DSC_5940.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_5940.jpg"
+    },
+    {
+        "name":  "DSC_2962.jpg",
+        "date_taken":  "2026-04-15 22:15:05",
+        "full_path":  "/photography/images/fulls/DSC_2962.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_2962.jpg"
+    },
+    {
+        "name":  "DSC_2946.jpg",
+        "date_taken":  "2026-04-15 22:14:06",
+        "full_path":  "/photography/images/fulls/DSC_2946.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_2946.jpg"
+    },
+    {
+        "name":  "DSC_1613.jpg",
+        "date_taken":  "2026-04-12 23:33:55",
+        "full_path":  "/photography/images/fulls/DSC_1613.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_1613.jpg"
+    },
+    {
+        "name":  "DSC_1231.jpg",
+        "date_taken":  "2026-04-12 20:36:26",
+        "full_path":  "/photography/images/fulls/DSC_1231.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_1231.jpg"
+    },
+    {
+        "name":  "DSC_9306.jpg",
+        "date_taken":  "2026-04-02 22:41:09",
+        "full_path":  "/photography/images/fulls/DSC_9306.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_9306.jpg"
+    },
+    {
+        "name":  "DSC_8239.jpg",
+        "date_taken":  "2026-04-02 11:12:35",
+        "full_path":  "/photography/images/fulls/DSC_8239.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_8239.jpg"
+    },
+    {
+        "name":  "DSC_8192.jpg",
+        "date_taken":  "2026-04-02 11:04:58",
+        "full_path":  "/photography/images/fulls/DSC_8192.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_8192.jpg"
+    },
+    {
+        "name":  "DSC_0119.jpg",
+        "date_taken":  "2026-03-29 17:46:48",
+        "full_path":  "/photography/images/fulls/DSC_0119.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_0119.jpg"
+    },
+    {
+        "name":  "DSC_9693.jpg",
+        "date_taken":  "2026-03-29 17:15:01",
+        "full_path":  "/photography/images/fulls/DSC_9693.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_9693.jpg"
+    },
+    {
+        "name":  "DSC_7662.jpg",
+        "date_taken":  "2026-03-28 09:08:31",
+        "full_path":  "/photography/images/fulls/DSC_7662.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_7662.jpg"
+    },
+    {
+        "name":  "DSC_2309.jpg",
+        "date_taken":  "2026-03-08 07:59:38",
+        "full_path":  "/photography/images/fulls/DSC_2309.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_2309.jpg"
+    },
+    {
+        "name":  "DSC_2149.jpg",
+        "date_taken":  "2026-03-08 07:05:16",
+        "full_path":  "/photography/images/fulls/DSC_2149.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_2149.jpg"
+    },
+    {
+        "name":  "DSC_1837.jpg",
+        "date_taken":  "2026-03-08 06:39:25",
+        "full_path":  "/photography/images/fulls/DSC_1837.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_1837.jpg"
+    },
+    {
+        "name":  "DSC_0880.jpg",
+        "date_taken":  "2026-03-08 04:44:21",
+        "full_path":  "/photography/images/fulls/DSC_0880.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_0880.jpg"
+    },
+    {
+        "name":  "DSC_0739.jpg",
+        "date_taken":  "2026-03-08 04:06:14",
+        "full_path":  "/photography/images/fulls/DSC_0739.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_0739.jpg"
+    },
+    {
+        "name":  "DSC_0270.jpg",
+        "date_taken":  "2026-03-04 22:04:20",
+        "full_path":  "/photography/images/fulls/DSC_0270.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_0270.jpg"
+    },
+    {
+        "name":  "DSC_0254.jpg",
+        "date_taken":  "2026-03-04 21:59:18",
+        "full_path":  "/photography/images/fulls/DSC_0254.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_0254.jpg"
+    },
+    {
+        "name":  "DSC_0178.jpg",
+        "date_taken":  "2026-03-04 21:27:58",
+        "full_path":  "/photography/images/fulls/DSC_0178.jpg",
+        "thumb_path":  "/photography/images/thumbs/DSC_0178.jpg"
+    },
+    {
+        "name":  "IMG_0578.jpg",
+        "date_taken":  "2026-01-31 22:25:26",
+        "full_path":  "/photography/images/fulls/IMG_0578.jpg",
+        "thumb_path":  "/photography/images/thumbs/IMG_0578.jpg"
+    },
+    {
+        "name":  "IMG_0481.jpg",
+        "date_taken":  "2026-01-08 14:32:26",
+        "full_path":  "/photography/images/fulls/IMG_0481.jpg",
+        "thumb_path":  "/photography/images/thumbs/IMG_0481.jpg"
+    },
+    {
+        "name":  "IMG_0443.jpg",
+        "date_taken":  "2026-01-08 13:59:38",
+        "full_path":  "/photography/images/fulls/IMG_0443.jpg",
+        "thumb_path":  "/photography/images/thumbs/IMG_0443.jpg"
+    },
+    {
+        "name":  "IMG_0369.jpg",
+        "date_taken":  "2026-01-07 00:35:38",
+        "full_path":  "/photography/images/fulls/IMG_0369.jpg",
+        "thumb_path":  "/photography/images/thumbs/IMG_0369.jpg"
+    },
+    {
+        "name":  "IMG_0086.jpg",
+        "date_taken":  "2025-12-30 02:03:45",
+        "full_path":  "/photography/images/fulls/IMG_0086.jpg",
+        "thumb_path":  "/photography/images/thumbs/IMG_0086.jpg"
+    },
+    {
+        "name":  "IMG_9913.jpg",
+        "date_taken":  "2025-12-19 16:16:30",
+        "full_path":  "/photography/images/fulls/IMG_9913.jpg",
+        "thumb_path":  "/photography/images/thumbs/IMG_9913.jpg"
+    },
+    {
+        "name":  "IMG_9490.jpg",
+        "date_taken":  "2025-11-29 16:22:58",
+        "full_path":  "/photography/images/fulls/IMG_9490.jpg",
+        "thumb_path":  "/photography/images/thumbs/IMG_9490.jpg"
+    },
+    {
+        "name":  "IMG_9159.jpg",
+        "date_taken":  "2025-11-29 14:46:31",
+        "full_path":  "/photography/images/fulls/IMG_9159.jpg",
+        "thumb_path":  "/photography/images/thumbs/IMG_9159.jpg"
+    },
+    {
+        "name":  "IMG_9106.jpg",
+        "date_taken":  "2025-11-29 14:31:08",
+        "full_path":  "/photography/images/fulls/IMG_9106.jpg",
+        "thumb_path":  "/photography/images/thumbs/IMG_9106.jpg"
+    },
+    {
+        "name":  "IMG_8160.jpg",
+        "date_taken":  "2025-11-02 23:53:58",
+        "full_path":  "/photography/images/fulls/IMG_8160.jpg",
+        "thumb_path":  "/photography/images/thumbs/IMG_8160.jpg"
+    },
+    {
+        "name":  "IMG_7241.jpg",
+        "date_taken":  "2025-10-25 22:49:31",
+        "full_path":  "/photography/images/fulls/IMG_7241.jpg",
+        "thumb_path":  "/photography/images/thumbs/IMG_7241.jpg"
+    },
+    {
+        "name":  "IMG_6426.jpg",
+        "date_taken":  "2025-09-07 17:24:15",
+        "full_path":  "/photography/images/fulls/IMG_6426.jpg",
+        "thumb_path":  "/photography/images/thumbs/IMG_6426.jpg"
+    },
+    {
+        "name":  "IMG_6109.jpg",
+        "date_taken":  "2025-09-07 14:20:31",
+        "full_path":  "/photography/images/fulls/IMG_6109.jpg",
+        "thumb_path":  "/photography/images/thumbs/IMG_6109.jpg"
+    },
+    {
+        "name":  "IMG_6080.jpg",
+        "date_taken":  "2025-09-07 14:13:08",
+        "full_path":  "/photography/images/fulls/IMG_6080.jpg",
+        "thumb_path":  "/photography/images/thumbs/IMG_6080.jpg"
+    },
+    {
+        "name":  "IMG_5569.jpg",
+        "date_taken":  "2025-08-17 16:34:57",
+        "full_path":  "/photography/images/fulls/IMG_5569.jpg",
+        "thumb_path":  "/photography/images/thumbs/IMG_5569.jpg"
+    },
+    {
+        "name":  "IMG_5157.jpg",
+        "date_taken":  "2025-08-17 15:03:38",
+        "full_path":  "/photography/images/fulls/IMG_5157.jpg",
+        "thumb_path":  "/photography/images/thumbs/IMG_5157.jpg"
+    },
+    {
+        "name":  "IMG_5028.jpg",
+        "date_taken":  "2025-08-17 14:19:04",
+        "full_path":  "/photography/images/fulls/IMG_5028.jpg",
+        "thumb_path":  "/photography/images/thumbs/IMG_5028.jpg"
+    },
+    {
+        "name":  "IMG_4966.jpg",
+        "date_taken":  "2025-08-17 13:50:41",
+        "full_path":  "/photography/images/fulls/IMG_4966.jpg",
+        "thumb_path":  "/photography/images/thumbs/IMG_4966.jpg"
+    },
+    {
+        "name":  "IMG_4963.jpg",
+        "date_taken":  "2025-08-17 13:48:37",
+        "full_path":  "/photography/images/fulls/IMG_4963.jpg",
+        "thumb_path":  "/photography/images/thumbs/IMG_4963.jpg"
+    },
+    {
+        "name":  "IMG_3652.jpg",
+        "date_taken":  "2025-07-26 13:53:04",
+        "full_path":  "/photography/images/fulls/IMG_3652.jpg",
+        "thumb_path":  "/photography/images/thumbs/IMG_3652.jpg"
+    }
 ]
