@@ -18,19 +18,21 @@ const generatedCssFiles = [
 ];
 
 gulp.task('delete', function () {
-    return del(['images/*.*']);
+    return del(['images/fulls/*', 'images/thumbs/*', 'images/*.*']);
 });
 
 gulp.task('resize-images', function () {
     return gulp.src('images/*.*')
         .pipe(imageResize({
-            width: 1024,
-            imageMagick: true
+            width: 1600,
+            imageMagick: true,
+            quality: 0.9
         }))
         .pipe(gulp.dest('images/fulls'))
         .pipe(imageResize({
             width: 640,
-            imageMagick: true
+            imageMagick: true,
+            quality: 0.8
         }))
         .pipe(gulp.dest('images/thumbs'));
 });
