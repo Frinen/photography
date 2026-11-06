@@ -179,8 +179,11 @@
 	  $image_img.data("loaded", true);
 	  $image_img.attr("src", src);
 	  $image_img.one("load", function () {
-		var $image = $image_img.parent(".image");
-		if ($image.length) {
+		var $image = $image_img.parent(".image");		$image_img.css({
+		  visibility: "visible",
+		  opacity: 1,
+		  pointerEvents: "auto"
+		});		if ($image.length) {
 		  $image.css("background-image", "url(" + src + ")");
 		}
 	  });
@@ -199,8 +202,12 @@
 	  // Set background position.
 	  if ((x = $image_img.data("position"))) $image.css("background-position", x);
 
-	  // Hide original img.
-	  $image_img.hide();
+	  // Keep the img in the DOM and visually hidden so IntersectionObserver can still track it.
+	  $image_img.css({
+		visibility: "hidden",
+		opacity: 0,
+		pointerEvents: "none"
+	  });
 	});
 
 	var $thumbImages = $main.find(".thumb img");
